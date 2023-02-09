@@ -29,22 +29,22 @@ def sleep():
 
 
 
-def run_detection_test():
+#def run_detection_test():
     # Start the Selenium script
-    browser = webdriver.Firefox()
-    browser.get("http://www.example.com/detection-test")
+    #browser = webdriver.Firefox()
+    #browser.get("http://www.example.com/detection-test")
     
     # Retrieve the result from the Selenium script
-    result = browser.find_element(By.ID, 'detectionResult').text
+   # result = browser.find_element(By.ID, 'detectionResult').text
     
     # Update the output field with the result
-    output_field.config(state="normal")
-    output_field.delete("1.0", "end")
-    output_field.insert("end", result)
-    output_field.config(state="disabled")
+   # output_field.config(state="normal")
+    #output_field.delete("1.0", "end")
+   # output_field.insert("end", result)
+    #output_field.config(state="disabled")
     
     # Close the browser
-    browser.quit()
+    #browser.quit()
 
 def convert():
     # Get the value from the input field
